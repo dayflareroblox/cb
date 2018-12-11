@@ -68,6 +68,9 @@ if(cmd === `${prefix}purge`){
    
   //---------------------------------------------------------------\\//---------------------------------------------------------------\\
 if(cmd === `${prefix}a`){
+   
+     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('Sorry, but you do not have the **Manage Messages** permissions! If you think this is an error, contact an owner.')
+    if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.channel.send('I do not have the **Manage Messages** permission in this server.');   
     let an = args.join(" ");
 
    let embed = new Discord.RichEmbed()
