@@ -67,6 +67,10 @@ if(cmd === `${prefix}purge`){
 }   
    
   //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+   if(cmd === `${prefix}what is blue ventus?`){
+      message.reply("blue ventus is a big gay buthole who fucks trannys and sucks desireds cock because he can and hes a hoe and a hoex3 and then times again by 10. @BlueVentus ")
+   }      
+  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
 if(cmd === `${prefix}a`){
    
      if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('Sorry, but you do not have the **Manage Messages** permissions! If you think this is an error, contact an owner.')
