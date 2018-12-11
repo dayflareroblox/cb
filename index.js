@@ -68,7 +68,7 @@ if(cmd === `${prefix}purge`){
    
   //---------------------------------------------------------------\\//---------------------------------------------------------------\\
    if(cmd === `${prefix}whatisblueventus`){
-    message.channel.send("blue ventus is a big gay buthole who fucks trannys and sucks desireds cock because he can and hes a hoe and a hoex3 and then times again by 10. @BlueVentus ")
+    message.channel.send("blue ventus is a big gay buthole who fucks trannys and sucks desireds cock because he can and hes a hoe and a hoex3 and then times again by 10. @BlueVentus ");
    }      
   //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
 if(cmd === `${prefix}a`){
