@@ -125,7 +125,7 @@ channel.send(embed).then(sentEmbed => {
      .setThumbnail("https://cdn.discordapp.com/attachments/520216250589118465/520249593271681045/unknown.png")
      .setDescription("Welcome to the Help page, I am CB and I am here to help ya!")
      .setColor("#ff001d")
-     .addField("For commands say:", "!cmds")
+     .addField("For commands say:", "?cmds")
      .setFooter("For extra info DM a helper.")
      
      message.channel.send(embed)
@@ -200,7 +200,7 @@ if (cmd === `${prefix}report`){
    .addField("Report Reason", reason);
 
 
-   let reportschannel = message.guild.channels.find(`name`, "reports");
+   let reportschannel = message.guild.channels.find(`name`, "user-reports");
    if(!reportschannel) return message.channel.send("Couldnt find the specified channel path. :unamused:");
    
 
@@ -239,7 +239,7 @@ if (cmd === `${prefix}report`){
   .addField("Time", message.createdAt)
   .addField("Kick Reason", kReason);
 
-   let kchannel = message.guild.channels.find(`name`, "modlogs");
+   let kchannel = message.guild.channels.find(`name`, "moderation-logging");
    if(!kchannel) return message.channel.send("Channnel path not found. :smile:")
 
   message.guild.member(kUser).kick(kReason);
@@ -282,7 +282,7 @@ if (cmd === `${prefix}report`){
     .addField("Banned Reason", bReason);
 
   
-     let bChannel = message.guild.channels.find(`name`, "modlogs");
+     let bChannel = message.guild.channels.find(`name`, "moderation-logging");
      if(!bChannel) return message.channel.send("Channnel path not found. :smile:")
   
     message.guild.member(bUser).ban(bReason);
